@@ -65,7 +65,7 @@ def is_transaction_successful(money_received, drink_cost):
 
 
 def make_coffee(drink_name, order_ingredients):
-
+    """Substracts ingredients for drinks from resources"""
     for item in order_ingredients:
         resources[item] -= order_ingredients[item]
     print(f"Here is your {drink_name} ☕️")
